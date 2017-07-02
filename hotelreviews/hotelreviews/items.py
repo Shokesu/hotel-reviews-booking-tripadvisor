@@ -19,6 +19,7 @@ class BookingReviewItem(scrapy.Item):
     positive_content = scrapy.Field()
     negative_content = scrapy.Field()
     tags = scrapy.Field()
+    date = scrapy.Field()
 
 class BookingHotelItem(scrapy.Item):
     name = scrapy.Field()
