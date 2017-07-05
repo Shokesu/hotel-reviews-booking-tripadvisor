@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6afe2df0-ebfa-40aa-ad94-2a39ba999af3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hotelreviews/booking2.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hotelreviews/haven_hotel.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hotelreviews/hotelreviews/spiders/bookingReviews_spider.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hotelreviews/hotelreviews/spiders/demo_spider.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hotelreviews/hotelreviews/spiders/tripadvisor_spider.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hotelreviews/itemsbookinghotels.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hotelreviews/quotes.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hotelreviews/quotes_demo.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hotelreviews/hotelreviews/items.py" afterPath="$PROJECT_DIR$/hotelreviews/hotelreviews/items.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hotelreviews/hotelreviews/pipelines.py" afterPath="$PROJECT_DIR$/hotelreviews/hotelreviews/pipelines.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hotelreviews/hotelreviews/settings.py" afterPath="$PROJECT_DIR$/hotelreviews/hotelreviews/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hotelreviews/hotelreviews/spiders/booking_spider.py" afterPath="$PROJECT_DIR$/hotelreviews/hotelreviews/spiders/booking_spider.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hotelreviews/hotelreviews/spiders/tripadvisor_spider.py" afterPath="$PROJECT_DIR$/hotelreviews/hotelreviews/spiders/tripadvisor_spider.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,12 +20,26 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="booking_spider.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hotelreviews/hotelreviews/spiders/booking_spider.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="tripadvisor_spider.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hotelreviews/hotelreviews/spiders/tripadvisor_spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="108">
+              <caret line="6" column="18" lean-forward="true" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -416,13 +419,21 @@
       <option name="project" value="LOCAL" />
       <updated>1499029612374</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="booking hotel review spider works">
+      <created>1499243973655</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1499243973655</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19624102" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19624102" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -451,7 +462,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="a few progress" />
-    <option name="LAST_COMMIT_MESSAGE" value="a few progress" />
+    <MESSAGE value="booking hotel review spider works" />
+    <option name="LAST_COMMIT_MESSAGE" value="booking hotel review spider works" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -839,16 +851,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hotelreviews/hotelreviews/spiders/booking_spider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" column="82" lean-forward="false" selection-start-line="24" selection-start-column="82" selection-end-line="24" selection-end-column="82" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hotelreviews/hotelreviews/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -857,11 +859,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/hotelreviews/hotelreviews/spiders/booking_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/hotelreviews/hotelreviews/spiders/tripadvisor_spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="108">
+          <caret line="6" column="18" lean-forward="true" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
