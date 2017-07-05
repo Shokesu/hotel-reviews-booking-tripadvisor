@@ -15,6 +15,15 @@ SPIDER_MODULES = ['hotelreviews.spiders']
 NEWSPIDER_MODULE = 'hotelreviews.spiders'
 
 
+MONGODB_HOST= '127.0.0.1'
+MONGODB_PORT = 27017
+MONGODB_DBNAME= 'test'
+MONGODB_DOCNAME= 'Barcelona_booking_hotels_reviews'
+
+# LOG_STDOUT = True
+# LOG_LEVEL = 'ERROR'
+
+
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'hotelreviews (+http://www.yourdomain.com)'
 
@@ -64,9 +73,9 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'hotelreviews.pipelines.HotelreviewsPipeline': 300,
-#}
+ITEM_PIPELINES = {
+   'hotelreviews.pipelines.HotelreviewsPipeline': 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See http://doc.scrapy.org/en/latest/topics/autothrottle.html

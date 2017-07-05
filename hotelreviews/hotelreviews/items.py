@@ -18,8 +18,14 @@ class BookingReviewItem(scrapy.Item):
     score = scrapy.Field()
     positive_content = scrapy.Field()
     negative_content = scrapy.Field()
-    tags = scrapy.Field()
+    url = scrapy.Field()
+    # tags = scrapy.Field()
     date = scrapy.Field()
+    hotelName = scrapy.Field()
+    hotelUrl = scrapy.Field()
+    hotelLocation = scrapy.Field()
+    hotelStars = scrapy.Field()
+
 
 class BookingHotelItem(scrapy.Item):
     name = scrapy.Field()
@@ -27,4 +33,5 @@ class BookingHotelItem(scrapy.Item):
     location = scrapy.Field()
     score = scrapy.Field()
     reviews = scrapy.Field()
+
 
