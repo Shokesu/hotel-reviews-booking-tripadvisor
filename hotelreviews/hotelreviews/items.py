@@ -34,4 +34,17 @@ class BookingHotelItem(scrapy.Item):
     score = scrapy.Field()
     reviews = scrapy.Field()
 
+class TripadvisorReviewItem(scrapy.Item):
+    title = scrapy.Field()
+    score = scrapy.Field()
+    review = scrapy.Field()
+    url = scrapy.Field()
+    date = scrapy.Field()
+    hotelName = scrapy.Field()
+    hotelUrl = scrapy.Field()
+    hotelLocation = scrapy.Field()
+    hotelStars = scrapy.Field()
+    userId = scrapy.Field()
+
+
 
