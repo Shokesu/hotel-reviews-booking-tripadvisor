@@ -35,15 +35,27 @@ class TripadvisorSpider(scrapy.Spider):
         item = TripadvisorReviewItem()
         item['title'] = response.xpath('//div[@class="quote"]/text()').extract()[0][1:-1] #strip the quotes (first and last char)
         item['review'] = response.xpath('//div[@class="entry"]/p/text()').extract_first()
-        item['score'] = response.xpath('//span[@class="rate sprite-rating_s rating_s"]/img/@alt').extract_first()
+        #
+        try:
+            score = response.xpath('//div[@class="rating reviewItemInline"]/span/@class').extract_first()
+            score = float(score.split("_")[-1])/10
+            item['score'] = score
+        except:
+            score = None
+            item['score'] = score
+
         item["url"] = response.url
-        item["date"] = response.xpath('//span[@class="ratingDate]/@content').extract_first()
+        item["date"] = response.xpath('//span[@class="ratingDate relativeDate"]/@title').extract_first()
         item["hotelName"] = response.xpath('//div[@class="surContent"]/a[@class="HEADING"]/text()').extract_first()
         item["hotelUrl"] = response.urljoin(response.xpath('//div[@class="surContent"]/a[@class="HEADING"]/@href').extract_first())
-        item["hotelLocation"] = response.xpath('//span[@class="street-address]/text()').extract_first() + \
-                                + ", " + response.xpath('//span[@class="locality"]/text()').extract_first() + \
-                                + ", " +response.xpath('//span[@class="country-name"]/text()').extract_first()
+        street_address = response.xpath('//span[@class="street-address"]/text()').extract_first()
+        locality = response.xpath('//span[@class="locality"]/text()').extract_first()
+        country_name = response.xpath('//span[@class="country-name"]/text()').extract_first()
 
-        item["hotelStars"] = response.xpath('//span[@class="star"]/span/img/@alt').extract_first()
+        item["hotelLocation"] = street_address + ", " + locality + country_name
+        try:
+            item["hotelStars"] = response.xpath('//span[@class="star"]/span/img/@alt').extract_first().split()[0]
+        except:
+            item["hotelStars"] = None
         item["userId"] = response.xpath('//div[@class="username mo"]/span/text()').extract_first()
         return item

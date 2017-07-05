@@ -18,7 +18,7 @@ NEWSPIDER_MODULE = 'hotelreviews.spiders'
 MONGODB_HOST= '127.0.0.1'
 MONGODB_PORT = 27017
 MONGODB_DBNAME= 'test'
-MONGODB_DOCNAME= 'Barcelona_booking_hotels_reviews'
+MONGODB_DOCNAME= 'Amsterdam_tripadvisor_hotels_reviews'
 
 # LOG_STDOUT = True
 # LOG_LEVEL = 'ERROR'
